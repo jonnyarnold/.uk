@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic|Montserrat:400,700);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.splash-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center middle;
+
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+/* Backgrounds */
+.sun {
+  background-image: url('/img/sun.jpg');
+}
+
+.germany {
+  background-image: url('/img/germany.jpg');
+}
+
+.gingerbread {
+  background-image: url('/img/gingerbread.jpg');
+}
+
+.ny {
+  background-image: url('/img/ny.png');
+}
+
+.pier {
+  background-image: url('/img/pier.jpg');
+}
+
+.shack {
+  background-image: url('/img/shack.jpg');
+}
+
+.splash-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.panel {
+  padding: 20px;
+  margin: 20px 20px;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, .5);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.circle {
+  border-radius: 1000px; /* Automatically adjusts */
+  vertical-align: mddle;
+}
+
+@media (orientation: landscape) {
+  .caption {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+@media (orientation: portrait) {
+  .caption {
+    display: block;
+    text-align: center;
+  }
+}
+
+.bordered {
+  border: 10px solid white;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+  margin: 10px 30px;
+}
+
+.splash-inner h1, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Icons */
+
+.social-list {
+  margin: 20px 0;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 26px;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+  background-color: white;
+  transition: box-shadow 0.25s linear;
+}
+
+.email:hover {
+  box-shadow: 0 0 20px 5px rgba(245, 125, 20, 1);
+}
+
+.twitter:hover {
+  box-shadow: 0 0 20px 5px rgba(106, 207, 244, 1); 
+}
+
+.linkedin:hover {
+  box-shadow: 0 0 20px 5px rgba(51, 114, 189, 1);
+}
