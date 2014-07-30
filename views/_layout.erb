@@ -8,7 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,29 +19,7 @@
   </head>
   <body>
 
-    <div class='splash-outer germany'>
-      <div class='splash-inner'>
-
-        <div class='panel'>
-          <img src='img/lakes.jpg' class='inline circle bordered' />
-          <div class='caption'>
-            <h1>Jonny Arnold</h1>
-            <h3>Insert clever tagline here.</h3>
-          </div>
-          <ul class='links'>
-            <li>Bio</li>
-            <li>CV</li>
-            <li>Projects</li>
-          </ul>
-          <ul class='social-list'>
-            <li><a href='mailto:jonny.arnold89@gmail.com'><img src='img/email.png' class='social email' /></a></li>
-            <li><a href='http://twitter.com/jonnyarnold89'><img src='img/twitter.png' class='social twitter' /></a></li>
-            <li><a href='http://uk.linkedin.com/in/jonnyarnold'><img src='img/linkedin.png' class='social linkedin' /></a></li>
-          </ul>
-        </div>  
-        
-      </div>
-    </div>    
+    <%= yield %>  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

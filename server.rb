@@ -1,7 +1,9 @@
 require 'sinatra'  # Web server
 
-set :public_folder, File.dirname(__FILE__)
-
 get '/' do
-  redirect '/index.html'
+  erb :index, :layout => :_layout
+end
+
+get '/cv' do
+  erb :cv, :layout => :_layout
 end

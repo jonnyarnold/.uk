@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic|Montserrat:400,700);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: large;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.splash-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('/img/pier.jpg');
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.splash-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.panel, .page {
+  padding: 1em;
+  margin: 2em;
+  box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.page {
+  margin: 2em;
+}
+
+@media (max-width: 400px) {
+  .page {
+    margin: 1em 0.5em;
+    padding: 0 0 1em 0;
+  }
+}
+
+.page-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('/img/sun.jpg');
+  z-index: -100;
+}
+
+@media (orientation: landscape) {
+  .caption {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+@media (orientation: portrait) {
+  .caption {
+    display: block;
+    text-align: center;
+  }
+}
+
+.bordered {
+  border: 0.5em solid white;
+  box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, .5);
+  margin: 1em 2em;
+  background-color: white;
+}
+
+.circle {
+  border-radius: 1000px; /* This auto-crops to give a circle! */
+}
+
+.splash-inner h1, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 2em 0;
+  padding: 0;
+}
+
+/* Icons */
+
+.social-list li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: inline-block;
+  margin: 0 1em;
+  border-radius: 1000px;
+  box-shadow: 0 0 0.5em 0.5em rgba(255, 255, 255, 0.5);
+  background-color: white;
+  transition: box-shadow 0.25s linear;
+}
+
+.email:hover {
+  box-shadow: 0 0 1em 1em rgba(245, 125, 20, 1);
+}
+
+.twitter:hover {
+  box-shadow: 0 0 1em 1em rgba(106, 207, 244, 1); 
+}
+
+.linkedin:hover {
+  box-shadow: 0 0 1em 1em rgba(51, 114, 189, 1);
+}
+
+.bullet {
+  clear: both;
+  padding: 1em 2em;
+  overflow: auto;
+  vertical-align: middle;
+}
+
+.bullet img {
+  padding: 0.25em;
+  border: 1px solid #999;
+}
+
+.bullet img.left {
+  float: left;
+  margin: 0 0.5em 0 0; 
+}
+
+.bullet img.right {
+  float: right;
+  margin: 0 0 0 0.5em;
+}
+
+.bullet p, .header-bullet p {
+  text-align: justify;
+}
+
+.header-bullet img {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.header-bullet {
+  overflow: auto;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding: 2em; /* Make sure the image's border is rendered */
+}
+
+.header-bullet h1 {
+  margin-top: 0;
+}
+
+.education-panel {
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+@media (max-width: 400px) {
+  
+  .bullet, .header-bullet {
+    margin: 0;
+    padding: 1em;
+  }
+
+  .education-panel {
+    margin: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 0.25em 0.5em 0.25em rgba(0, 0, 0, .5);
+  }
+}
+
+.education-panel .logo-link {
+  float: right;
+
+}
+
+.qualification {
+  font-weight: bold;
+}
+
+.subject, .results {
+  display: block;
+}
+
+.results {
+  font-style: italic;
+}
+
+@media (max-width: 400px) {
+  .bullet img, .header-bullet img {
+    float: none;
+    display: block;
+    margin: 1em auto;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+}
+
+@media print {
+  body {
+    font-size: small;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
+  img:not(.print), a img:not(.print) {
+    display: none;
+  }
+}
