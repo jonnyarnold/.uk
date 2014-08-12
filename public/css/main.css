@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic|Montserrat:400,700);
 
 html, body {
   height: 100%;
@@ -46,7 +46,7 @@ h3 {
   margin: 2em;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .page {
     margin: 1em 0.5em;
     padding: 0 0 1em 0;
@@ -61,8 +61,15 @@ h3 {
   right: 0;
   background-size: cover;
   background-position: center center;
-  background-image: url('/img/sun.jpg');
   z-index: -100;
+}
+
+.sun {
+  background-image: url('/img/sun.jpg');
+}
+
+.germany {
+  background-image: url('/img/germany.jpg');
 }
 
 @media (orientation: landscape) {
@@ -100,6 +107,78 @@ ul {
   list-style: none;
   margin: 2em 0;
   padding: 0;
+}
+
+ul.projects {
+  list-style-type: disc;
+  margin: 1em 2em;
+  padding: 0.5em;
+  box-shadow: 0 0.25em 0.5em 0.25em rgba(0, 0, 0, .5);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+ul.projects li {
+  font-size: smaller;
+}
+
+ul.projects > li {
+  margin: 0.5em 1em;
+}
+
+ul.projects p, ul.tech {
+  display: inline;
+}
+
+ul.tech li {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  margin: 0.1em 0.2em;
+  border-radius: 0.4em;
+  color: white;
+}
+
+li.js {
+  background-color: #f15501;
+}
+
+li.ruby {
+  background-color: #701516;
+}
+
+li.php {
+  background-color: #6e03c1;
+}
+
+li.net {
+  background-color: #5a25a2;
+}
+
+li.matlab {
+  background-color: #bb92ac;
+}
+
+li.python {
+  background-color: #3581ba;
+}
+
+li.sql {
+  background-color: #5861ce;
+}
+
+li.java {
+  background-color: #b07219;
+}
+
+li.scala {
+  background-color: #7dd3b0;
+}
+
+li.ops {
+  background-color: #cc5555;
+}
+
+li.arduino {
+  background-color: #bd79d1;
 }
 
 /* Icons */
@@ -181,7 +260,7 @@ ul {
   background-color: rgba(255, 255, 255, .8);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   
   .bullet, .header-bullet {
     margin: 0;
@@ -212,7 +291,7 @@ ul {
   font-style: italic;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .bullet img, .header-bullet img {
     float: none;
     display: block;
