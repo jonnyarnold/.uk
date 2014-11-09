@@ -205,6 +205,12 @@ li.arduino {
   background-color: #bd79d1;
 }
 
+li.misc {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333 !important;
+}
+
 /* Icons */
 
 .social-list li {
