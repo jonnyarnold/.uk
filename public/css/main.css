@@ -118,7 +118,7 @@ ul.projects {
 }
 
 ul.projects li {
-  font-size: smaller;
+  font-size: small;
 }
 
 ul.projects > li {
@@ -130,6 +130,7 @@ ul.projects p, ul.tech {
 }
 
 ul.tech li {
+  font-size: small;
   display: inline-block;
   padding: 0.2em 0.4em;
   margin: 0.1em 0.2em;
