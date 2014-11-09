@@ -37,7 +37,8 @@ h3 {
 
 .panel, .page {
   padding: 1em;
-  margin: 2em;
+  display: inline-block;
+  margin: 2em auto;
   box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
   background-color: rgba(255, 255, 255, .8);
 }
@@ -109,11 +110,33 @@ ul {
   padding: 0;
 }
 
+ul.links li {
+  border: 1px solid white;
+  border-radius: 0.5em;
+
+  margin: 1em auto;
+  padding: 0;
+  box-shadow: 0 0.25em 0.5em 0.25em rgba(0, 0, 0, .5);
+  background-color: rgba(255, 255, 255, .8);
+  transition: all 0.25s linear;
+}
+
+ul.links li a {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+}
+
+ul.links li:hover {
+  border: 1px solid #428bca;
+  box-shadow: 0 0.25em 0.5em 0.25em #428bca;
+} 
+
 ul.projects {
   list-style-type: disc;
   margin: 1em 2em;
   padding: 0.5em;
-  box-shadow: 0 0.25em 0.5em 0.25em rgba(0, 0, 0, .5);
+  box-shadow: 0 0.25em 0.5em 0.25em rgba(255, 255, 255, .8);
   background-color: rgba(255, 255, 255, .8);
 }
 
