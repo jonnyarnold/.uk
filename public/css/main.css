@@ -104,7 +104,7 @@ h3 {
   padding: 0;
 }
 
-ul {
+ul.links, ul.tech {
   list-style: none;
   margin: 2em 0;
   padding: 0;
@@ -133,7 +133,6 @@ ul.links li:hover {
 } 
 
 ul.projects {
-  list-style-type: disc;
   margin: 1em 2em;
   padding: 0.5em;
   border-radius: 1em;
@@ -319,6 +318,13 @@ li.misc {
 
 .results {
   font-style: italic;
+}
+
+.spoiler {
+  display: none;
+  border-left: 2px solid red;
+  padding-left: 1em;
+  font-size: smaller;
 }
 
 @media (max-width: 700px) {
