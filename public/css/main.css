@@ -39,7 +39,7 @@ h3 {
   padding: 1em;
   margin: 2em auto;
   box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .panel {
@@ -113,6 +113,12 @@ ul.links, ul.tech {
   padding: 0;
 }
 
+ul.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 ul.links li {
   border: 1px solid white;
   border-radius: 0.5em;
@@ -150,11 +156,11 @@ ul.projects > li {
   margin: 0.5em 1em;
 }
 
-ul.projects p, ul.tech {
+ul.projects p, ul.tech, ul.tags {
   display: inline;
 }
 
-ul.tech li {
+ul.tech li, ul.tags li {
   font-size: small;
   display: inline-block;
   padding: 0.2em 0.4em;
@@ -207,7 +213,7 @@ li.arduino {
   background-color: #bd79d1;
 }
 
-li.misc {
+li.misc, ul.tags li {
   background-color: transparent;
   border: 1px solid #333;
   color: #333 !important;
