@@ -1,4 +1,5 @@
 # The Five Crosses
+<!--- puzzle -->
 
 The Five Crosses is an inconspicuous-looking pub in a sleepy town. When it first opened, the pub was a common stop for travellers and -the- meeting point for the townspeople due to its boundless supply of gin, rum and beer. Now travellers are told to stay away and the people of the town have resorted to drinking in the Town Hall instead.
 

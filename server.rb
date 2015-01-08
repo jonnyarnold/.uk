@@ -28,6 +28,15 @@ def post_html(title)
   markdown(file_contents)
 end
 
+# Blogging
+require './blog'
+blog = Blog::Blog.load('posts')
+
+get '/blog' do
+  @recent_posts = blog.posts
+  erb :blog_index
+end
+
 get '/blog/:title' do |title|
   fail Sinatra::NotFound unless post_exists?(title)
   erb :blog, locals: { blog_html: post_html(title) }

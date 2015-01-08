@@ -1,4 +1,5 @@
 # Bad Calculator
+<!--- puzzle -->
 
 There are a few things you should know about my calculator: 
 
