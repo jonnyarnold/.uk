@@ -6,21 +6,35 @@
 module Blog
   # A Blog is a collection of Posts.
   class Blog
+    include Enumerable
+
     def self.load(post_path)
-      new(post_path)
-    end
-
-    attr_accessor :posts
-
-    def initialize(post_path)
-      @posts = md_in(post_path).map do |post_file|
+      posts = md_in(post_path).map do |post_file|
         Post.new(post_file)
       end
+
+      new(posts)
     end
 
     # Gets all the .md files in the given path.
-    def md_in(path)
+    def self.md_in(path)
       Dir.glob("#{path}/*.md")
+    end
+
+    def initialize(posts)
+      @posts = posts
+    end
+
+    def each(&block)
+      @posts.each(&block)
+    end
+
+    def sorted_by_date
+      Blog.new(sort_by { |p| p.publish_date }.reverse!)
+    end
+
+    def public
+      Blog.new(select { |p| !p.hidden? })
     end
   end
 
@@ -32,13 +46,17 @@ module Blog
     end
 
     attr_accessor :url
-    METADATA_KEYS = [:title, :tags]
+    METADATA_KEYS = [:title, :tags, :publish_date]
 
     # Accessors
     METADATA_KEYS.each do |key|
       define_method(key) do
         metadata[key]
       end
+    end
+
+    def hidden?
+      publish_date.nil?
     end
 
     private
@@ -62,11 +80,19 @@ module Blog
     end
 
     def parse_tags(content)
-      # Of the form: <!--- tag1,tag2 -->
+      # Of the form: <!--- tags:tag1,tag2 -->
       all_tags = content[1][/^\<\!\-\-\- (.*) \-\-\>$/, 1]
 
       return [] if all_tags.nil?
       all_tags.split(',').map(&:to_sym)
+    end
+
+    def parse_publish_date(content)
+      # Of the form: *Posted by Jonny Arnold on 25th April 1989*
+      publish_date_str = content[2][/^\*Posted by (.*) on (.*)\*$/, 2]
+
+      return nil if publish_date_str.nil?
+      Date.parse(publish_date_str)
     end
   end
 end

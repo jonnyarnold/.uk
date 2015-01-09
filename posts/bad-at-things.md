@@ -1,5 +1,6 @@
 # You Are Bad at Things
 <!--- software,productivity -->
+*Posted by Jonny Arnold on 18th February 2014*
 
 Have a think about the things that you aren't good at. Are you forgetful? Are you often late?
 

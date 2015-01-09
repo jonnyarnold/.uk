@@ -76,6 +76,10 @@ h3 {
   background-image: url('/img/germany.jpg');
 }
 
+.shack {
+  background-image: url('/img/shack.jpg');
+}
+
 @media (orientation: landscape) {
   .caption {
     display: inline-block;

@@ -33,7 +33,7 @@ require './blog'
 blog = Blog::Blog.load('posts')
 
 get '/blog' do
-  @recent_posts = blog.posts
+  @recent_posts = blog.public.sorted_by_date
   erb :blog_index
 end
 

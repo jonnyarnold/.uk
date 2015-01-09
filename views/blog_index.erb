@@ -1,4 +1,4 @@
-<div class='page-outer germany'>&nbsp;</div>
+<div class='page-outer shack'>&nbsp;</div>
 
 <div class='blog header'>
   <img src='/img/lakes.jpg' class='inline circle bordered right' />
@@ -7,12 +7,13 @@
 </div>
 
 <div class='blog page'>
-  <h2>Recent Posts</h2>
+  <h2>My Posts</h2>
 
   <ul>
     <% @recent_posts.each do |post| %>
       <li>
-        <a href='<%= post.url %>'><%= post.title %></a> 
+        <%= post.publish_date.strftime('%d %b %Y') %>: 
+        <a href='<%= post.url %>'><b><%= post.title %></b></a> 
         <ul class='tags'>
           <% post.tags.each do |tag| %>
             <li><%= tag.to_s %></li>
