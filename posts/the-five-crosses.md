@@ -16,7 +16,7 @@ The group of travellers are a curious bunch. Each has a 'pet' - an animal they h
 
 Some have attributed the failure of the pub to a lack of business acumen in the group of travellers. Others have attributed it to the sheer horror instilled in you when you see any of these unusual characters. However, the most popular reason for the failure of the pub is the notoriously difficult pub quiz held on Sunday nights. The quiz has never been completed by any patron, nor has it changed for the last 3 years. The quiz consists of a set of five crosses, each with a vowel in the centre with a space on each of its four sides.
 
-![](/posts/img/the-five-crosses.png)
+[![](/posts/img/the-five-crosses.png)](/posts/img/the-five-crosses.png)
 
 The objective of the quiz is to fill in each space with a single letter so that each cross consists of two words: one written top to bottom and one written left to right. To make the quiz more interesting, each letter of the alphabet features only once apart from Q, which does not feature at all. The answer to the quiz, when read across the crosses, identifies not only the pub's new owner, but also the reason why they were appointed. 
 

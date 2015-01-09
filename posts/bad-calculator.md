@@ -9,7 +9,7 @@ There are a few things you should know about my calculator:
 
 Today I tried using my calculator, and ended up with this:
 
-![](/posts/img/bad-calculator.png)
+[![](/posts/img/bad-calculator.png)](/posts/img/bad-calculator.png)
 
 There's a feeling I can't switch off from, however; *I think it's trying to tell me something.*
 
