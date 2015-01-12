@@ -30,7 +30,7 @@ module Blog
     end
 
     def sorted_by_date
-      Blog.new(sort_by { |p| p.publish_date }.reverse!)
+      Blog.new(sort_by { |p| p.last_updated || p.publish_date }.reverse!)
     end
 
     def public
@@ -46,7 +46,7 @@ module Blog
     end
 
     attr_accessor :url
-    METADATA_KEYS = [:title, :tags, :publish_date]
+    METADATA_KEYS = [:title, :tags, :publish_date, :last_updated]
 
     # Accessors
     METADATA_KEYS.each do |key|
@@ -93,6 +93,14 @@ module Blog
 
       return nil if publish_date_str.nil?
       Date.parse(publish_date_str)
+    end
+
+    def parse_last_updated(content)
+      # Of the form: *Updated on 25th April 1989*
+      updated_date_str = content[3][/^\*Updated on (.*)\*$/, 1]
+
+      return publish_date if updated_date_str.nil?
+      Date.parse(updated_date_str)
     end
   end
 end
