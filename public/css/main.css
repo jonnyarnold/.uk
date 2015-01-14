@@ -225,6 +225,11 @@ li.misc, ul.tags li {
 
 /* Icons */
 
+ul.social-list {
+  margin: 0;
+  padding: 0;
+}
+
 .social-list li {
   display: inline-block;
   margin: 0;
