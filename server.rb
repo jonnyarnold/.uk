@@ -20,10 +20,10 @@ blog = Blog::Blog.load('posts')
 
 get '/blog' do
   @recent_posts = blog.public.sorted_by_date
-  erb :blog_index
+  erb :'blog/index'
 end
 
 get '/blog/:title' do |title|
   fail Sinatra::NotFound unless post = blog.post_exists?(title)
-  erb :blog, locals: { blog_html: markdown(post.content) }
+  erb :'blog/article', locals: { blog_html: markdown(post.content) }
 end
