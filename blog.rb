@@ -16,19 +16,11 @@ module Blog
       new(posts)
     end
 
-    # Gets all the .md files in the given path.
-    def self.md_in(path)
-      Dir.glob("#{path}/*.md")
-    end
-
-    def initialize(posts)
-      @posts = posts
-    end
-
     def each(&block)
       @posts.each(&block)
-    end
+    end 
 
+    # Selection methods
     def sorted_by_date
       Blog.new(sort_by { |p| p.last_updated || p.publish_date }.reverse!)
     end
@@ -36,16 +28,32 @@ module Blog
     def public
       Blog.new(select { |p| !p.hidden? })
     end
+
+    def post_exists?(url_title)
+      find { |p| p.url_title == url_title }
+    end
+
+    private
+
+    # Gets all the .md files in the given path.
+    def self.md_in(path)
+      Dir.glob("#{path}/*.md")
+    end
+
+    def initialize(posts)
+      @posts = posts
+    end   
   end
 
   # A Post is an article for a Blog.
   class Post
     def initialize(post_path)
       @path = post_path
-      @url = '/blog/' + post_path[/\/([^\.]*).md/, 1]
+      @url_title = post_path[/\/([^\.]*).md/, 1]
+      @url = '/blog/' + @url_title
     end
 
-    attr_accessor :url
+    attr_accessor :url, :url_title
     METADATA_KEYS = [:title, :tags, :publish_date, :last_updated]
 
     # Accessors
@@ -53,6 +61,10 @@ module Blog
       define_method(key) do
         metadata[key]
       end
+    end
+
+    def content
+      File.read(@path)
     end
 
     def hidden?
