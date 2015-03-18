@@ -3,33 +3,43 @@
 
 Programming is often seen in the mainstream as an emotionless pursuit. Ask a member of the public to imagine a programmer at work and they will typically describe a bespectacled boy in a t-shirt, clutching a caffienated drink and staring blankly at the computer screen for hours on end, with the only sound being the clacking of keyboard keys.
 
-I've recently joined a company called Reevoo and the reality is different. Not totally different - most stereotypes have a basis, after all - but certainly different. The developers work as a team, communicating with each other frequently.
+I've recently joined a company called Reevoo and the reality is different. Not totally different - most stereotypes have a basis, after all - but certainly different. The developers work as a team on the tasks given to them. Also, developers don't (always) prefer to be alone: they will communicate with each other frequently.
 
 Even when programmers are on their own, they won't be quiet. Sometimes when I'm programming my girlfriend comes into the room to ask what's wrong; most of the time I'm not aware I'm talking to myself - mumbling to myself about how complicated a piece of code is, or simply shouting at the computer because "this was the easy bit".
 
 And there's the thing - *I'm not aware I'm talking to myself*. I'm venting to the world how I feel about a piece of code and I don't listen to it. This realisation got me thinking: what emotions do we typically feel when we're programming, and what information could they give us if we listened to them?
 
+### Confusion - "I'm looking at this code and I don't understand what is going on!"
+
+Code evolves. As a result, a section of code can be difficult to read if you haven't been on that journey of evolution yourself. Software engineering practices such as comments and good naming aim to provide readers with hints as to how the code is set up the way it is, but sometimes it is not enough. 
+
+I find it difficult to write code because I don't know how much the reader will know about the system - are they going to know what a Decorator is? Do they know enough mathematics to follow the approximation I made? Are they aware of what the difference between a Client Admin and a System Admin are in this system?
+
+When I come across scary code, the first thing I do is try to **understand** what the code does. Often I write down or diagram how it is structured and try to share that with the team. This allows the team to tell me if I've made an incorrect assumption, and also teaches the other developers about the code.
+
+Sometimes I **use tests to understand the code** in a scientific way - I test my assumptions of the system by writing an executable test and running it. This has the added advantage that the test will fail if the assumption changes. I've found tests to be a useful documentation of a system's assumptions.
+
+Once I have a good idea of what the code does, it's time to **make it better** ([The Boy Scout Rule](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule)): I try to restructure the code to make its intent more obvious. I change the names of variables and methods to explain more clearly their purpose. I add comments to explain *why* something is done, rather than how. 
+
 ### Fear - "I don't want to change this code because I'm scared it will break"
 
-Fear is a powerful emotion that often makes us make irrational decisions. In a programming context scary code suggests that the code is not adequately understood (possibly because it is inherently complicated) or the programmer has a troubled past with this code. Sometimes it's because there are no tests to support the functionality.
+Fear is a powerful emotion that often makes us make irrational decisions. Code can be scary for a number of reasons. Maybe I don't understand it. Maybe there are no tests to catch breaking changes. Maybe I have had run-ins with this code before and found it difficult to work with.
 
-There are a few ways of tackling scary code. Often the first thing to do is understand what the code does and then write down how it is structured. This gives other programmers a hand to hold as they venture into the forest, metaphorically speaking.
+When I come across scary code, the first thing I do is try to **understand** what the code does (see the *Confusion* section above).
 
-Next, you should add tests to ensure the scary code is adequately defined. This can often be done as a way of testing your understanding - guess what the system does, write a test to demonstrate, and if it passes your understanding is correct.
+Once I understand the code, I **add more tests**. Tests act as a comfort blanket for the next programmer (which could be you!), allowing them to quickly establish what specification the code that they write must satisfy.
 
-Once you know the scary code's nuances you can begin redesigning the code to better accommodate these nuances. Remember that most code starts as a beautifully designed masterpiece, but only for the requirements at the time of the design. Code has to be redesigned regularly to ensure the design is still fit for purpose. Scary code usually comes about as a result of patching changes on top of an inadequate design.
+Once I know the scary code's nuances and have written tests against them, I can begin to  **refactor the code** to better accommodate these nuances. Code has to be redesigned regularly to ensure the design is still fit for purpose. Scary code usually comes about as a result of patching changes on top of an inadequate design.
 
 ### Frustration - "Why aren't the tests passing?!"
 
 After working on a piece of code for a long time with little progress, anger can set in. Nobody likes not knowing what's going on. Frustration can come about for two reasons. First, and most often, the problem is hidden among a number of layers of the code base; as the programmer sees their debugging scope expanding, they start to become agitated. Secondly, and often in coalition with the first, the code fails to communicate accurately the point of failure. Ambiguous error messages and functions that allow abnormal inputs are likely to make you tear out your hair.
 
-*(I have a pet peeve around allowing parameters you can't deal with. It's most prominent in dynamic languages like Python and Ruby, where elegance is sometimes favoured over accuracy. In this world, None and nil objects are passed around and wreak havok on the code that follows it. I'll leave my hatred for another post.)*
-
 My solutions to frustrating code are similar to those for scary code: document what you find and use tests to isolate the issue. Describe the error more fully, and provide the developer with enough information to debug the code without having to perform any live interrogation. The test whether you need to do this is simple - if you needed to look at the code to understand the issue, you need more information in your error messages.
 
-### Confusion - "I'm looking at this code and I still don't understand what is going on!"
+### Coolness
 
-A premonition of frustration, feeling confused (and the realisation that follows) should indicate that the area of the code you are looking at needs to be clearer. Even with complex decision-making, you should be able to split out the logic into more logical sections. Draw a diagram to show how the code flows, and circulate this documentation to others so that they understand what is going on. Write comments into the code to explain why things are the way they are.
+### Excitement
 
 ---
 
