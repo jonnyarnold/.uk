@@ -3,7 +3,7 @@
 
 Programming is often seen in the mainstream as an emotionless pursuit. Ask a member of the public to imagine a programmer at work and they will typically describe a bespectacled boy in a t-shirt, clutching a caffienated drink and staring blankly at the computer screen for hours on end, with the only sound being the clacking of keyboard keys.
 
-I've recently joined a company called Reevoo and the reality is different. Not totally different - most stereotypes have a basis, after all - but certainly different. The developers work as a team on the tasks given to them. Also, developers don't (always) prefer to be alone: they will communicate with each other frequently.
+I've recently joined a company called [Reevoo](http://reevoo.github.io/about/) and the reality is different. Not totally different - most stereotypes have a basis, after all - but certainly different. The developers work as a team on the tasks given to them. Also, developers don't (always) prefer to be alone: they will communicate with each other frequently to learn, discuss or chat.
 
 Even when programmers are on their own, they won't be quiet. Sometimes when I'm programming my girlfriend comes into the room to ask what's wrong; most of the time I'm not aware I'm talking to myself - mumbling to myself about how complicated a piece of code is, or simply shouting at the computer because "this was the easy bit".
 
@@ -33,9 +33,17 @@ Once I know the scary code's nuances and have written tests against them, I can 
 
 ### Frustration - "Why aren't the tests passing?!"
 
-After working on a piece of code for a long time with little progress, anger can set in. Nobody likes not knowing what's going on. Frustration can come about for two reasons. First, and most often, the problem is hidden among a number of layers of the code base; as the programmer sees their debugging scope expanding, they start to become agitated. Secondly, and often in coalition with the first, the code fails to communicate accurately the point of failure. Ambiguous error messages and functions that allow abnormal inputs are likely to make you tear out your hair.
+I think of myself as quite a patient guy. However, I have been driven to the point of insanity by tests that I can't correct. 
+
+I've found my anger stems from two primary situations. First, I find myself getting angry when a small *feature* change can only be implemented with *large* code changes. I've seen a number of wonderful architectures that keep things exquisitely decoupled but require 20 files to be changed when the ID changes from an integer to a GUID.
+
+My other main anger-inducing situation is when the code fails to communicate accurately the point of failure. In the world of RSpec and Jasmine, which grants us a great way of writing executable specifications, do we believe that `SectionsBuilder no flags set #to_s correct JSON` is a reasonable specification? Why do we believe it is okay to tell the developer that there has been an error *without specifying what the error is*?
+
+Sorry, got a bit angry towards the end there.
 
 My solutions to frustrating code are similar to those for scary code: document what you find and use tests to isolate the issue. Describe the error more fully, and provide the developer with enough information to debug the code without having to perform any live interrogation. The test whether you need to do this is simple - if you needed to look at the code to understand the issue, you need more information in your error messages.
+
+---
 
 ### Coolness
 
