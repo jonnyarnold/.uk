@@ -7,11 +7,13 @@ html, body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: large;
+  letter-spacing: -0.025em;
 }
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  letter-spacing: -0.05em;
 }
 
 h3 {
@@ -143,7 +145,7 @@ ul.links li a {
 ul.links li:hover {
   border: 1px solid #428bca;
   box-shadow: 0 0.25em 0.5em 0.25em #428bca;
-} 
+}
 
 ul.projects {
   margin: 1em 2em;
@@ -250,7 +252,7 @@ ul.social-list {
 }
 
 .twitter:hover {
-  box-shadow: 0 0 1em 1em rgba(106, 207, 244, 1); 
+  box-shadow: 0 0 1em 1em rgba(106, 207, 244, 1);
 }
 
 .linkedin:hover {
@@ -271,7 +273,7 @@ ul.social-list {
 
 img.left {
   float: left;
-  margin: 0 0.5em 0 0; 
+  margin: 0 0.5em 0 0;
 }
 
 img.right {
@@ -308,7 +310,7 @@ img.right {
 }
 
 @media (max-width: 700px) {
-  
+
   .bullet, .header-bullet {
     margin: 0;
     padding: 1em;
@@ -348,6 +350,18 @@ img.right {
 .blog img {
   display: block;
   margin: auto;
+}
+
+.gallery {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.gallery img {
+  display: inline-block;
+  margin: 1em;
+  max-width: 20%;
 }
 
 @media (max-width: 700px) {
