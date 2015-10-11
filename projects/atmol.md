@@ -1,5 +1,6 @@
 # Trapping Atoms with a Single Laser
-*Summer 2009*
+<!--- physics -->
+*2009*
 
 In the summer of 2009 I worked at Durham University's [Atomic and Molecular Research Centre (AtMol)](http://massey.dur.ac.uk/), working towards trapping molecules with a single laser using a pyramid magneto-optical trap (MOT). As a research associate I worked with PhD students working on the project.
 

@@ -18,11 +18,11 @@ module Blog
 
     def each(&block)
       @posts.each(&block)
-    end 
+    end
 
     # Selection methods
     def sorted_by_date
-      Blog.new(sort_by { |p| p.last_updated || p.publish_date }.reverse!)
+      Blog.new(sort_by { |p| p.event_date || p.last_updated || p.publish_date }.reverse!)
     end
 
     def public
@@ -42,7 +42,7 @@ module Blog
 
     def initialize(posts)
       @posts = posts
-    end   
+    end
   end
 
   # A Post is an article for a Blog.
@@ -54,7 +54,7 @@ module Blog
     end
 
     attr_accessor :url, :url_title
-    METADATA_KEYS = [:title, :tags, :publish_date, :last_updated]
+    METADATA_KEYS = [:title, :tags, :event_date, :publish_date, :last_updated]
 
     # Accessors
     METADATA_KEYS.each do |key|
@@ -97,6 +97,14 @@ module Blog
 
       return [] if all_tags.nil?
       all_tags.split(',').map(&:to_sym)
+    end
+
+    def parse_event_date(content)
+      # Of the form: *2008-2009* or *2008*
+      event_date_str = content[2][/^\*([0-9]*)/, 1]
+
+      return nil if event_date_str.nil?
+      Date.new(event_date_str.to_i)
     end
 
     def parse_publish_date(content)

@@ -1,4 +1,5 @@
 # Running Coupling in the Standard Model and Beyond
+<!--- physics,software -->
 *2010-2011*
 
 In particle physics, we deal with three fundamental forces of Nature (gravity is considered too weak to be included). It has been found that the strengths of each of these forces is not constant, but dependent on the amount of energy in a collision. As the forces' strengths - or coupling - vary at different energy scales, there is a possibility that these forces could unify at a single point. This is interesting, as then we could postulate that the three forces we see at 'low' energy scales are actually three manifestations of the same unified force at a higher energy.

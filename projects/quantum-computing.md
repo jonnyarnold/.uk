@@ -1,4 +1,5 @@
 # An Introduction to Quantum Computing
+<!--- physics -->
 *2008-2009*
 
 Over the past 30 years the introduction of the silicon chip and transistors has transformed the world into a technological one; personal computers, mobile devices and other electronics have massively improved the processing power available to the public. Despite the fast pace of conventional computers, there are still a number of problems which cannot be solved particularly quickly, such as factorising large integers. It is anticipated that – unless a particularly clever algorithm is devised – this problem is a fundamental deficiency in conventional computing. Because of this, the search for new computational technologies has been around for as long as computing has.
