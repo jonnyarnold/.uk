@@ -8,9 +8,9 @@ module Blog
   class Blog
     include Enumerable
 
-    def self.load(post_path)
+    def self.load(post_path, url_path)
       posts = md_in(post_path).map do |post_file|
-        Post.new(post_file)
+        Post.new(post_file, url_path)
       end
 
       new(posts)
@@ -47,10 +47,10 @@ module Blog
 
   # A Post is an article for a Blog.
   class Post
-    def initialize(post_path)
+    def initialize(post_path, url_path)
       @path = post_path
       @url_title = post_path[/\/([^\.]*).md/, 1]
-      @url = '/blog/' + @url_title
+      @url = url_path + '/' + @url_title
     end
 
     attr_accessor :url, :url_title

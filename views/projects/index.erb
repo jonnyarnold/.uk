@@ -1,0 +1,13 @@
+<%= erb :'projects/header' %>
+
+<div class='blog page'>
+   <p>It's safe to say I've done a lot of things. Here is a selection of projects I've been involved with.</p>
+
+  <ul>
+    <% @recent_posts.each do |post| %>
+      <li> 
+        <a href='<%= post.url %>'><b><%= post.title %></b></a> 
+      </li>
+    <% end %>
+  </ul>
+</div>
