@@ -103,7 +103,7 @@ module Blog
       # Of the form: *2008-2009* or *2008*
       event_date_str = content[2][/^\*([0-9]*)/, 1]
 
-      return nil if event_date_str.nil?
+      return nil if event_date_str.nil? || event_date_str == ''
       Date.new(event_date_str.to_i)
     end
 
