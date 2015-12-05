@@ -9,15 +9,13 @@
 
     <p><b>I am a software engineer.</b> By day I even get paid for it. I spend the majority of my time making cool stuff with computers, talking about software or playing computer games. It's safe to say <b>I'm a geek.</b> But hey, that's cool now. Right?</p>
 
-    <!--<p>Currently I'm looking for <b>full-stack web development roles in London, Hertfordshire or Buckinghamshire.</b> If you have one then please get in touch!</p>-->
-
   </div>
 
   <h2>Why Me?</h2>
 
   <div class='bullet'>
     <img src='/img/spectrum.png' width='100' height='100' class='left bordered' />
-    <p><b>I am a generalist.</b> Hand me a problem and I will use the <i>most appropriate</i> tools to solve it, rather than bending my favourite tools to fit it. I've completed projects in several programming languages (C#, Python, Ruby, JavaScript, PHP, MatLab/Octave) and dabbled in a few more (Scala, Go) to make sure that when I get given a problem I know the language that will solve it best.</p>
+    <p><b>I am a generalist.</b> Hand me a problem and I will use the <i>most appropriate</i> tools to solve it, rather than bending my favourite tools to fit it. I've completed projects in several programming languages (Ruby, JavaScript, Python, Elixir, Go, C#, PHP, MatLab/Octave) and dabbled in a few more (Clojure, Scala) to make sure that when I get given a problem I know the language that will solve it best.</p>
   </div>
 
   <div class='bullet'>
@@ -41,15 +39,19 @@
       <li class='misc'>Image Manipulation and Vector Drawing</li>
       <li class='misc'>Karaoke<sup>[citation needed]</sup></li>
       <li class='misc'>Machine Learning</li>
+      <li class='misc'>People Management</li>
       <li class='misc'>Presentation Writing</li>
+      <li class='misc'>Programming Language Design</li>
       <li class='misc'>Project Management</li>
       <li class='misc'>Public Speaking</li>
       <li class='misc'>Puzzle and Game Development</li>
       <li class='misc'>Statistics</li>
+      <li class='misc'>System Architecture</li>
       <li class='misc'>Teaching</li>
       <li class='misc'>Technical Writing</li>
       <li class='misc'>Typesetting with LaTeX</li>
       <li class='misc'>User-Centred Design</li>
+      <li class='misc'>User Interface Design</li>
     </ul>
   </div>
 
@@ -58,14 +60,37 @@
   <div class='bullet'>
     <a href='http://www.reevoo.com' target="_blank"><img src='/img/reevoo.png' class='left bordered' /></a>
     <p>Since 2014 I have been working as a Developer for <a href='http://www.reevoo.com' target='_blank'>Reevoo</a>, an independent ratings and reviews collector. Working in an Agile environment with an emphasis on pair programming, I have led and contributed to teams working on enhancements and maintenance of all aspects of their collection, display and analysis systems.</p>
-
-    <ul class='tech'>
-      <li class='ruby'>Ruby on Rails, Sinatra, RSpec, Capybara</li>
-      <li class='js'>HTML/CSS + JavaScript + Angular.js, jQuery, Jasmine</li>
-      <li class='sql'>SQL (MySQL, PostgreSQL), ElasticSearch, InfluxDB</li>
-      <li class='ops'>Git + GitHub, Docker, Jenkins, Capistrano, Chef</li>
-    </ul>
   </div>
+
+  <ul class='projects'>
+    <li>
+      <p>I led development of a JavaScript widget and backend to allow users to have conversations on client sites.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby + Grape, RSpec</li>
+        <li class='js'>HTML/CSS + JavaScript (ES6) + React, Jasmine</li>
+        <li class='sql'>SQL (PostgreSQL)</li>
+        <li class='ops'>Git + GitHub, AWS</li>
+      </ul>
+    </li>
+    <li>
+      <p>I worked on a system designed to give clients the ability to respond to reviews direct to the customer.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby + Grape, RSpec</li>
+        <li class='js'>HTML/CSS + JavaScript + Angular.js, Jasmine</li>
+        <li class='sql'>SQL (MySQL, PostgreSQL), ElasticSearch, RabbitMQ</li>
+        <li class='ops'>Git + GitHub, AWS, Jenkins, Capistrano, Chef</li>
+      </ul>
+    </li>
+    <li>
+      <p>I continue to contribute to the support and development of Reevoo's core review collection system.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby on Rails + HAML, ERB, RSpec, Capybara</li>
+        <li class='js'>HTML/CSS + JavaScript + Jasmine</li>
+        <li class='sql'>SQL (MySQL, PostgreSQL), RabbitMQ</li>
+        <li class='ops'>Git + GitHub, AWS, Jenkins, Capistrano, Chef</li>
+      </ul>
+    </li>
+  </ul>
 
   <div class='bullet'>
     <a href='http://www.tessella.com' target="_blank"><img src='/img/tessella.png' class='right bordered' /></a>
@@ -154,6 +179,13 @@
 
   <ul class='projects'>
     <li>
+      <p><a href="http://github.com/jonnyarnold/fn" target="_blank">fn</a> is a prototype functional programming language. This was built from scratch, first in Ruby and now in <a href="http://github.com/jonnyarnold/fn-go" target="_blank">Go</a>.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby</li>
+        <li class='go'>Go</li>
+      </ul>
+    </li>
+    <li>
       <p><a href="http://asgardenterprises.github.io/ChronoCommit/" target="_blank">ChronoCommit</a> answers the question "When do people on GitHub commit the most?". As part of a team I was responsible for the processing of data and style of the site.</p>
       <ul class='tech'>
         <li class='python'>Python</li>
@@ -225,14 +257,6 @@
     </li>
   </ul>
 
-  <!--
-  <h2>What I'm Looking For</h2>
-
-  <div class='bullet'>
-    <p>I look for <b>full-stack web development roles in London.</b> As a company, you should be talking to anyone who will listen about software quality and the processes that can improve it, via blogs or at conferences. I'd like opportunities to grow within the company based on merit, with a senior technical career path available. I'm keen on training myself and others, so it would be a real plus if you provide a way of allowing me to do this!</p>
-  </div>
-  -->
-
   <h2>What I Think</h2>
 
   <div class='bullet'>
@@ -241,6 +265,10 @@
 
   <div class='bullet'>
     <p><b>Agile software development is a more successful way of working.</b> Iterative development gives the system to the user more quickly, allowing them to feedback on issues before they become difficult to change.</p>
+  </div>
+
+  <div class='bullet'>
+    <p><b>Keep learning.</b> I find learning to be great fun and makes me feel like I am developing in my job.</p>
   </div>
 
   <h2>Where I've Learned</h2>

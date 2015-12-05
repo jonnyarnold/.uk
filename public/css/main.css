@@ -219,6 +219,10 @@ li.arduino {
   background-color: #bd79d1;
 }
 
+li.go {
+  background-color: #375eab;
+}
+
 li.misc, ul.tags li {
   background-color: transparent;
   border: 1px solid #333;
