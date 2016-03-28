@@ -7,8 +7,10 @@ get '/' do
   erb :index
 end
 
-get '/cv' do
-  erb :cv
+[:cv, :manifesto].each do |page|
+  get "/#{page}" do
+    erb page
+  end
 end
 
 projects = Blog::Blog.load('projects', '/projects')

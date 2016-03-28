@@ -82,6 +82,10 @@ h3 {
   background-image: url('/img/shack.jpg');
 }
 
+.off-white {
+  background-color: #eee;
+}
+
 @media (orientation: landscape) {
   .caption {
     display: inline-block;
@@ -221,6 +225,10 @@ li.arduino {
 
 li.go {
   background-color: #375eab;
+}
+
+li.elixir {
+  background-color: #6e4a7e;
 }
 
 li.misc, ul.tags li {
@@ -370,6 +378,10 @@ img.right {
   display: inline-block;
   margin: 1em;
   max-width: 20%;
+}
+
+.explanation {
+  font-size: small;
 }
 
 @media (max-width: 700px) {
