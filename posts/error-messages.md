@@ -1,5 +1,12 @@
 # Error Messages: The Golden Rules
 <!--- software -->
+*Posted by Jonny Arnold on 28th March 2016*
+
+I think there are a lot of problems with error messages. The main issue is that often you need the error message translating: on more than one occasion I've asked a colleague about an error message, only for them to say "oh yeah, that actually means something else"!
+
+I believe the main issue with writing error messages is that when you're writing the message you are the expert. This is dangerous - you'll start using language that makes sense to you, but not to anyone else.
+
+Another possible issue is one of laziness - it's easier to let the built-in function throw an error message than to encapsulate the error in one of your own. However, if error messages are going to be useful, that encapsulation is invaluable.
 
 Here are some rules I try to follow when writing error messages:
 
