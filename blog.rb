@@ -93,7 +93,7 @@ module Blog
 
     def parse_tags(content)
       # Of the form: <!--- tags:tag1,tag2 -->
-      all_tags = content[1][/^\<\!\-\-\- (.*) \-\-\>$/, 1]
+      all_tags = content[1][/^\<\!\-\-\- (.*) \-\-\>/, 1]
 
       return [] if all_tags.nil?
       all_tags.split(',').map(&:to_sym)
@@ -109,7 +109,7 @@ module Blog
 
     def parse_publish_date(content)
       # Of the form: *Posted by Jonny Arnold on 25th April 1989*
-      publish_date_str = content[2][/^\*Posted by (.*) on (.*)\*$/, 2]
+      publish_date_str = content[2][/^\*Posted by (.*) on (.*)\*/, 2]
 
       return nil if publish_date_str.nil?
       Date.parse(publish_date_str)
@@ -117,7 +117,7 @@ module Blog
 
     def parse_last_updated(content)
       # Of the form: *Updated on 25th April 1989*
-      updated_date_str = content[3][/^\*Updated on (.*)\*$/, 1]
+      updated_date_str = content[3][/^\*Updated on (.*)\*/, 1]
 
       return publish_date if updated_date_str.nil?
       Date.parse(updated_date_str)
