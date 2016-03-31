@@ -41,7 +41,7 @@ h3 {
   padding: 1em;
   margin: 2em auto;
   box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .95);
 }
 
 .panel {
@@ -366,6 +366,18 @@ img.right {
 .blog img {
   display: block;
   margin: auto;
+}
+
+.blog.page {
+  font-size: large;
+  line-height: 2em;
+  max-width: 80%;
+  margin: auto;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  width: auto;
 }
 
 .gallery {

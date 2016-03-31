@@ -1,0 +1,36 @@
+# Consistency is Not A Reason
+<!--- software -->
+
+Consistency can be a good thing.
+
+There, I said it. That's the nicest I'll be to consistency today.
+
+In all seriousness, consistency has its advantages. By maintaining code conventions and mandating good software practices, you can bring the quality of a code base up. Furthermore, when code follows regular patterns it can be more obvious when mistakes are made. 
+
+There have been a [very](https://msdn.microsoft.com/en-us/library/aa733744(v=vs.60).aspx) [very](http://www.sitepoint.com/coding-standards/) [very](http://paul-m-jones.com/archives/34) [very](https://www.smashingmagazine.com/2012/10/why-coding-style-matters/) large number of articles on why coding conventions matter. Consistency in general is a *positive* word in computer programming. As a result, I'm hesitant to publish this article, but I feel it is a thought that has gone unchallenged for a while: why do we have coding conventions, and what's the trade-off?
+
+## Why We Cling To Consistency
+
+I've been in discussions during my professional career where consistency is used as a *reason* for doing things. Rather than think critically about why we're doing things, we follow the coding conventions of our ancestors, for better or for worse. This, I believe, is incredibly dangerous and awkwardly common.
+
+Why do we do this? I think there's a pretty simple explanation for that: it's easier to follow someone else's conventions than to challenge them. [Maintaining the status quo is easier than changing it.](http://www.goalsys.com/books/documents/ChangingtheStatusQuo-PAPER.pdf) This, however, leads to a situation where everyone knows the conventions *but not why*. In this scenario, how will we know whether the reasons for establishing conventions are still valid?
+
+## The Impact of Consistency
+
+I also think that consistency gives a subliminal message to developers that experimentation is frowned upon. If the documentation style is mandated for the entire code base, changing the documentation style will be more difficult than if several styles were used through the code. (Why do we need the documentation style anyway?) This, I feel is the biggest reason: we should be ensuring our system is ready to change, not putting things in place to avoid change!
+
+Also, I've found that consistency doesn't usually matter. I've been in a number of meetings where coding conventions become the main topic of discussion. [Everyone knows they should be talking about something else, but it's an accessible topic and everyone has an opinion.](https://en.wikipedia.org/wiki/Law_of_triviality) Wouldn't it be better if we didn't have anything to argue about?
+
+![How Standard Proliferate (XKCD)](http://imgs.xkcd.com/comics/standards.png)
+
+## Being Consistent
+
+[Humans are really bad at being consistent.](/blog/bad-at-things). It doesn't matter whether you've *decided* on what the convention is: in practice, people will make mistakes. All that time spent deciding the correct line length is wasted unless you have something enforcing it.
+
+Do code style guidelines *really* make code easier to understand? Wouldn't it be better if we explained things more in comments, rather than making sure our variables are camel-cased?
+
+## ...and Breathe.
+
+Rant over. I think consistency is used as an excuse to think less, and that should be stopped. If you want code styles following, enforce it with a style checker - but any conventions will do. If there's a reason for being consistent, write it down. Constantly challenge it to make sure it's still valid.
+
+Just think more!
