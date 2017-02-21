@@ -1,6 +1,5 @@
 # What's Your Manifesto?
 <!--- culture,productivity -->
-*Posted by Jonny Arnold on 1st January 1970*
 
 What do you stand for? When choosing between two good but opposed things, which do you choose and why?
 
