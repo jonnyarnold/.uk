@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic|Montserrat:400,700);
 
 html, body {
   height: 100%;
@@ -7,16 +7,29 @@ html, body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: large;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
 }
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: -0.05em;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0.5em;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
 }
 
 h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-weight: 400;
 }
 
@@ -372,16 +385,22 @@ img.right {
   margin: auto;
 }
 
+.blog p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
 .blog.page {
   font-size: large;
-  line-height: 2em;
-  max-width: 80%;
-  margin: auto;
+  line-height: 1.5em;
   font-weight: 400;
 }
 
-@media (max-width: 700px) {
-  width: auto;
+.page {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery {
