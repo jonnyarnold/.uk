@@ -1,6 +1,5 @@
 PROJECTS WORKED ON - STILL TO DO
 
-ChronoCommit
 WordClock
 
 DUBB
