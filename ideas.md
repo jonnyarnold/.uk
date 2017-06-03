@@ -1,7 +1,5 @@
 PROJECTS WORKED ON - STILL TO DO
 
-WordClock
-
 DUBB
 DUSAGG
 Student Associates Scheme
