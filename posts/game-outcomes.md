@@ -1,6 +1,6 @@
 # Why Do I Care About the Game Outcomes Project?
 <!--- software,productivity -->
-*Posted by Jonny Arnold on 8th January 2015*
+*Posted by [Jonny Arnold](/) on 8th January 2015*
 
 [This article dropped into my Twitter feed](http://gamasutra.com/blogs/PaulTozour/20150106/233254/The_Game_Outcomes_Project_Part_2_Building_Effective_Teams.php), courtesy of [Jeff Atwood](https://twitter.com/codinghorror), and reports some interesting findings from The Game Outcomes Project:
 

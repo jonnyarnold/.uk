@@ -1,6 +1,6 @@
 # Error Messages: The Golden Rules
 <!--- software -->
-*Posted by Jonny Arnold on 28th March 2016*
+*Posted by [Jonny Arnold](/) on 28th March 2016*
 
 I think there are a lot of problems with error messages. The main issue is that often you need the error message translating: on more than one occasion I've asked a colleague about an error message, only for them to say "oh yeah, that actually means something else"!
 

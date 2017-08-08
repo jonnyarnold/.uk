@@ -1,0 +1,173 @@
+<div class='cv'>
+  <div class='header'>
+    <img class='header-image' src='/img/hello.jpg' width='200' height='200' />
+
+    <h1>Hi!<br />
+    My name is Jonny&nbsp;Arnold.</h1>
+
+    <p><b>I am a software engineer.</b> By day I even get paid for it.</p>
+
+    <p>I spend the majority of my time making cool stuff with computers, talking about software or playing computer games.</p>
+
+    <p>It&rsquo;s safe to say <b>I&rsquo;m a geek.</b> But hey, that&rsquo;s cool now. Right?</p>
+
+    <%= erb :'erb/social' %>
+  </div>
+
+  <h1 class="green">Why Me?</h1>
+
+  <div class='bullet'>
+    <img src='/img/code.png' width='100' height='100' class='left' />
+    <p><b>I am passionate about software.</b> Just ask my long-suffering fianc&eacute;e. I am more than happy to sit (in a pub) and talk at length about the nuances of programming languages with you or discuss the latest technologies. I like training people and giving presentations because it means I&rsquo;m not the expert any more; it gives me someone else that I can talk to about things I&rsquo;m interested in.</p>
+  </div>
+
+  <div class='bullet'>
+    <img src='/img/spectrum.png' width='100' height='100' class='right' />
+    <p><b>I am a generalist.</b> Hand me a problem and I will use the <i>most appropriate</i> tools to solve it, rather than bending my favourite tools to fit it. I&rsquo;ve completed projects in several programming languages (JavaScript, Ruby, Go, Python, Elixir, C#, C++, PHP, MatLab/Octave) and dabbled in a few more (Clojure, Scala) to make sure that when I get given a problem I know the best way to solve it.</p>
+  </div>
+
+  <div class='bullet'>
+    <img src='/img/mic.jpg' width='100' height='100' class='left' />
+    <p><b>I talk to people.</b> I spend time getting to know you: primarily because I find it interesting to hear about your life, but also because it makes working with you a lot easier. Close relationships are valuable, especially when working in teams. People have called me friendly; I think I&rsquo;m just interested in people.</p>
+  </div>
+
+  <div class='bullet'>
+    <p><b>It&rsquo;s not just programming.</b> I have skills in a wide range of fields, acquired in my spare time or during other projects.</p>
+
+    <ul class='non-programming-skills'>
+      <li class='misc'>Business Analysis</li>
+      <li class='misc'>Data Visualisation</li>
+      <li class='misc'>Digital Art</li>
+      <li class='misc'>Karaoke<sup>[citation needed]</sup></li>
+      <li class='misc'>Machine Learning</li>
+      <li class='misc'>Mathematics</li>
+      <li class='misc'>People Management</li>
+      <li class='misc'>Project Management</li>
+      <li class='misc'>Public Speaking</li>
+      <li class='misc'>System Architecture</li>
+      <li class='misc'>Teaching</li>
+      <li class='misc'>User-Centred Design</li>
+      <li class='misc'>User Interface Design</li>
+    </ul>
+  </div>
+
+  <h1 class="yellow">What I&rsquo;ve Done</h1>
+
+  <div class='bullet'>
+    <a class='bullet-image-link right' href='http://www.trussle.com' target="_blank"><img src='/img/trussle.png' /></a>
+    <p>Since 2016 I have been working for <a href='http://www.trussle.com' target='_blank'>Trussle</a>, an online mortgage broker. Working in a small company, I have had the opportunity to lead projects (technical and non-technical) and take part in a number of activities I was unable to do in larger companies.</p>
+  </div>
+
+  <ul class='projects'>
+    <li>
+      <p>As part of the development team I contributed to the development and maintenance of the <a href='http://trussle.com'>Trussle website</a> and the internal tools used to service customers.</p>
+      <ul class='tech'>
+        <li class='js'>Pug + HTML, SASS + CSS, JavaScript (ES6) + Angular + Webpack</li>
+        <li class='ops'>Git + Github, AWS, Codeship</li>
+      </ul>
+    </li>
+   <li>
+      <p>In order to guarantee code quality across a number of JavaScript projects I created <a href='https://github.com/trussle/qc'>Trussle QC</a>, a tool that integrates to JavaScript projects via NPM and Git hooks.</p>
+      <ul class='tech'>
+        <li class='shell'>Bash</li>
+        <li class='js'>JavaScript (ES6) + NPM, Mocha, should.js</li>
+        <li class='ops'>Git + Git Hooks</li>
+      </ul>
+    </li>
+    <li>
+      <p>I completed several design projects as interim designer and improving the culture of the company through initiatives like company retrospectives and a focus on learning and personal development.</p>
+    </li>
+  </ul>
+
+  <div class='bullet'>
+    <a class='bullet-image-link left' href='http://www.reevoo.com' target="_blank"><img src='/img/reevoo.png' /></a>
+    <p>Between 2014 and 2016 I worked for <a href='http://www.reevoo.com' target='_blank'>Reevoo</a>, an independent ratings and reviews collector. Working in an Agile environment with an emphasis on pair programming, I have led and contributed to teams working on enhancements and maintenance of all aspects of their collection, display and analysis systems.</p>
+  </div>
+
+  <ul class='projects'>
+    <li>
+      <p>I contributed to the ongoing support and development of Reevoo&rsquo;s core review collection system.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby on Rails + HAML, ERB, RSpec, Capybara</li>
+        <li class='js'>HTML/CSS + JavaScript + Jasmine</li>
+        <li class='sql'>SQL (MySQL, PostgreSQL), RabbitMQ</li>
+        <li class='ops'>Git + GitHub, AWS, Jenkins, Capistrano, Chef</li>
+      </ul>
+    </li>
+    <li>
+      <p>I am the lead contributor of <a href="https://github.com/reevoo/samuel" target="_blank">an open-source Github bot</a> that aims to improve code quality in development teams.</p>
+      <ul class='tech'>
+        <li class='elixir'>Elixir</li>
+        <li class='js'>Github API</li>
+      </ul>
+    </li>
+    <li>
+      <p>I led development of a JavaScript widget and backend to allow users to have conversations on client sites.</p>
+      <ul class='tech'>
+        <li class='ruby'>Ruby + Grape, RSpec</li>
+        <li class='js'>HTML/CSS + JavaScript (ES6) + React, Jasmine</li>
+        <li class='sql'>SQL (PostgreSQL)</li>
+        <li class='ops'>Git + GitHub, AWS</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class='bullet'>
+    <a class='bullet-image-link right' href='http://www.tessella.com' target="_blank"><img src='/img/tessella.png' /></a>
+    <p>Between 2011 and 2014 I was a consultant for <a href='http://www.tessella.com' target="_blank">Tessella</a>. During my time there I took up scientific software development, business analysis and project management roles. I have worked primarily in .NET for R&amp;D departments, occupational health providers and medical device companies.</p>
+  </div>
+
+  <ul class='projects'>
+    <li>
+      <p>I contributed as part of a development team to an internal data visualisation website to explore the hourly rates charged to clients.</p>
+      <ul class='tech'>
+      <li class='python'>Python + Flask</li>
+      <li class='js'>HTML/CSS + JavaScript + d3, jQuery, Underscore.js</li>
+      <li class='sql'>SQL (Oracle)</li>
+      <li class='ops'>Git + Git Hooks, Automated Deployment via Batch Scripts</li>
+      </ul>
+    </li>
+    <li>
+      <p>I tuned the algorithm used in a medical diagnosis device to ensure the highest possible concordance with test results.</p>
+      <ul class='tech'>
+        <li class='matlab'>MatLab</li>
+        <li class='ops'>Subversion</li>
+      </ul>
+    </li>
+    <li>
+      <p>I provided ad hoc support for a 10+-year-old application for supporting people to make healthier decisions.</p>
+      <ul class='tech'>
+        <li class='net'>C# + ASP.NET, Silverlight, Windows Forms, NUnit</li>
+        <li class='js'>HTML/CSS + JavaScript, jQuery</li>
+        <li class='java'>Java (inc. Bluetooth)</li>
+        <li class='ops'>Subversion</li>
+      </ul>
+    </li>    
+    <li>
+      <p>I was involved in all stages of development and management of the world-leading occupational health referral system, including integration with internal systems via web services.</p>
+      <ul class='tech'>
+        <li class='net'>Microsoft SharePoint 2010 Application Development (C# + ASP.NET, WCF, NUnit)</li>
+        <li class='ops'>Subversion</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class='paragraph-only-bullet'>
+    <p>I&rsquo;ve also done a number of projects in my space time. For more information check out my <a href='/projects'>Projects</a> and <a href='/blog'>Blog</a>.</p>
+  </div>
+
+  <h1 class="purple">Studies and Training</h1>
+
+  <ul class='projects'>
+    <li><a href='https://www.coursera.org/learn/machine-learning' target='_blank'>Machine Learning</a>, <a href='https://www.coursera.org/learn/progfun1' target='_blank'>Functional Programming</a> and Compilers @ Coursera</li>
+    <li>MPhys Physics @ <a href="http://www.dur.ac.uk">Durham University</a> (Class II Division I; 69%)</li>
+    <li>Computing, Physics, Mathematics, Further Mathematics and Business Studies @ <a href="http://www.hpoolsfc.ac.uk">Hartlepool Sixth Form College</a> (All A grade)</li>
+    <li>13 GCSEs @ <a href="http://www.htcs.org.uk/">High Tunstall School</a> (7 A*, 3 A, 2 B, 1 C)</li>
+  </ul>
+
+  <div class='footer'>
+    <h1>get in touch</h1>
+    <%= erb :'erb/social' %>
+  </div>
+
+</div>

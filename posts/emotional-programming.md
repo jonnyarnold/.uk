@@ -1,6 +1,6 @@
 # Emotional Programming
 <!--- software -->
-*Posted by Jonny Arnold on 20th March 2015*
+*Posted by [Jonny Arnold](/) on 20th March 2015*
 
 Programming is often seen in the mainstream as an emotionless pursuit. Ask a member of the public to imagine a programmer at work and they will typically describe a bespectacled boy in a t-shirt, clutching a caffienated drink and staring blankly at the computer screen for hours on end, with the only sound being the clacking of keyboard keys.
 

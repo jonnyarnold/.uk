@@ -1,0 +1,233 @@
+.cv {
+  @include page;
+
+  .header {
+    display: block;
+    margin: auto; 
+    padding: 2em 0; 
+    
+    text-align: center;
+    max-width: 640px;
+
+    h1 {
+      @include h1-underline(#F00);
+      margin-top: 0;
+      margin-bottom: 1em;
+    }  
+  }
+
+  .header-image {
+    @include bordered;
+    @include circle;
+    display: block;
+    margin: 0 auto 2em auto;
+
+    @include on-small-screen {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .social-list {
+    margin-top: 2em;
+  }
+
+  h1 {
+    @include h1-underline(#000);
+
+    &.red { border-bottom-color: #F00; }
+    &.orange { border-bottom-color: #F90; }
+    &.yellow { border-bottom-color: #FD0; }
+    &.green { border-bottom-color: #1C0; }
+    &.blue { border-bottom-color: #00F; }
+    &.purple { border-bottom-color: #60C; }
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+
+  .footer {
+    display: block;
+    margin: 0 auto; 
+    padding-top: 2em; 
+    
+    text-align: center;
+    max-width: 640px;
+
+    h1 {
+      color: #CCC;
+      border-bottom: none;
+      font-size: 100%;
+      font-variant: small-caps;
+    }  
+  }
+
+  ul.non-programming-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+
+    li {
+      margin: auto;
+      padding: 0.5em 1em;
+      
+      font-size: 80%;
+      text-align: center;
+
+      min-width: 25%;
+
+      @include on-small-screen {
+        min-width: 75%;
+      }
+    }
+  }
+
+  ul.projects {
+    border-top: 1px solid #CCC;
+    margin-bottom: 4em;
+
+    margin-top: 1em;
+
+    & > li {
+      border-bottom: 1px solid #CCC;
+      padding: 0.5em 1em;
+    }
+  }
+
+  ul.tech {
+    @include tag-list;
+  }
+
+  li.js {
+    color: #f15501;
+  }
+
+  li.ruby {
+    color: #701516;
+  }
+
+  li.php {
+    color: #6e03c1;
+  }
+
+  li.net {
+    color: #5a25a2;
+  }
+
+  li.matlab {
+    color: #bb92ac;
+  }
+
+  li.python {
+    color: #3581ba;
+  }
+
+  li.sql {
+    color: #5861ce;
+  }
+
+  li.java {
+    color: #b07219;
+  }
+
+  li.scala {
+    color: #7dd3b0;
+  }
+
+  li.ops {
+    color: #cc5555;
+  }
+
+  li.arduino {
+    color: #bd79d1;
+  }
+
+  li.go {
+    color: #375eab;
+  }
+
+  li.elixir {
+    color: #6e4a7e;
+  }
+
+  li.shell {
+    color: #89e051;
+  }
+
+  li.misc, ul.tags li {
+    color: #AAA !important;
+  }
+
+  .bullet {
+    clear: both;
+    padding: 1em 0;
+    overflow: auto;
+    vertical-align: middle;
+  }
+
+  .bullet img {
+    padding: 0.25em 0;
+  }
+
+  .left {
+    float: left;
+    margin: 0 1em 0 0;
+  }
+
+  .right {
+    float: right;
+    margin: 0 0 0 1em;
+  }
+
+  .bullet p {
+    text-align: justify;
+  }
+
+  .bullet-image-link {
+    @extend a.no-underline;
+    padding: 0;
+    line-height: 1;
+    border: 1px solid #EEE;
+    background-color: white;
+
+    img {
+      padding: 0.25em;
+      vertical-align: middle;
+    }
+  }
+
+  .paragraph-only-bullet {
+    margin-bottom: 4em;
+  }
+
+  .education-panel {
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, .8);
+  }
+
+  .education-panel .logo-link {
+    float: right;
+
+  }
+
+  .qualification {
+    font-weight: bold;
+  }
+
+  .subject, .results {
+    display: block;
+  }
+
+  .results {
+    font-style: italic;
+  }
+}
+
+

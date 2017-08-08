@@ -1,6 +1,6 @@
 # A Whistlestop Tour of Databases
 <!--- software,databases -->
-*Posted by Jonny Arnold on 21st March 2016*
+*Posted by [Jonny Arnold](/) on 21st March 2016*
 
 Everyone knows that any website needs a database. But why? In this talk I'll explain why we need databases and describe a few different types.
 

@@ -1,6 +1,6 @@
 # Bad Calculator
 <!--- puzzle -->
-*Posted by Jonny Arnold on 29th October 2014*
+*Posted by [Jonny Arnold](/) on 29th October 2014*
 
 There are a few things you should know about my calculator: 
 

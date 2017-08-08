@@ -1,6 +1,6 @@
 # Guest Posts
 
-*Posted by Jonny Arnold on 22nd June 2016*
+*Posted by [Jonny Arnold](/) on 22nd June 2016*
 
 This is a holding page for all the other places on the Internet I have written things. Keep checking back for updates!
 

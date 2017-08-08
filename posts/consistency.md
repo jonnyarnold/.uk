@@ -1,6 +1,6 @@
 # Consistency is Not A Reason
 <!--- software -->
-*Posted by Jonny Arnold on 26th June 2016*
+*Posted by [Jonny Arnold](/) on 26th June 2016*
 
 Consistency can be a good thing.
 

@@ -108,7 +108,7 @@ module Blog
     end
 
     def parse_publish_date(content)
-      # Of the form: *Posted by Jonny Arnold on 25th April 1989*
+      # Of the form: *Posted by [Jonny Arnold](/) on 25th April 1989*
       publish_date_str = content[2][/^\*Posted by (.*) on (.*)\*/, 2]
 
       return nil if publish_date_str.nil?
