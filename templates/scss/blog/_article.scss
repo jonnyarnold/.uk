@@ -1,4 +1,5 @@
-.blog.article {
+.blog.article,
+.projects.article {
   @include page;
 
   h1 {
@@ -66,23 +67,28 @@
     font-size: smaller;
   }
 
-  
-
   .gallery {
     display: block;
     text-align: center;
     margin: auto;
 
-    img {
+    a {
+      @extend a.no-underline;
       display: inline-block;
-      margin: 1em;
+      position: relative;
+      margin: 1em auto;
       max-width: 20%;
-
+      padding: 0.25em;
+      
       @include on-small-screen {
         display: block;
         margin: 1em auto;
         max-width: 80%;
       }
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 

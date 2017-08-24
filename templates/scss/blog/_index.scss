@@ -1,6 +1,7 @@
 @import 'article';
 
-.blog.index {
+.blog.index,
+.projects.index {
   @include page;
   
   h1 {
@@ -8,7 +9,7 @@
   }
 
   .post-index {
-    margin-top: 4em;
+    margin-top: 2em;
   }
 
   .post {
@@ -18,14 +19,24 @@
   .post-date {
     display: inline-block;
     font-size: 80%;
-    width: 5em;
+    width: 5.5em;
+
+    @include on-small-screen {
+      display: block;
+    }
   }
 
   .divider {
+    color: #CCC;
+    padding: 0 1em 0 0;
+    
     &:after {
       content: '·';
-      color: #CCC;
-      padding: 0 0.5em;
+    }
+
+    @include on-small-screen {
+      &:after { content: none; }
+      display: none;
     }
   }
 

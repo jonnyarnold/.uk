@@ -1,17 +1,13 @@
-<%= erb :'erb/projects/header' %>
+<div class='projects index'>
+  <h1>My Projects</h1>
+  <p>Things that <a href='/'>Jonny Arnold</a> has been involved in.</p>
 
-<div class='blog page'>
-   <p>It's safe to say I've done a lot of things. Here is a selection of projects I've been involved with.</p>
-
-  <ul>
+  <ul class='post-index'>
     <% @recent_posts.each do |post| %>
-      <li>
-        <a href='<%= post.url %>'><b><%= post.title %></b></a>
-        <ul class='tags'>
-          <% post.tags.each do |tag| %>
-            <li><%= tag.to_s %></li>
-          <% end %>
-        </ul>
+      <li class='post'>
+        <span class='post-date'><%= post.event_date %></span>
+        <span class='divider'>&nbsp;</span>
+        <a class='post-title' href='<%= post.url %>'><%= post.title %></a>
       </li>
     <% end %>
   </ul>

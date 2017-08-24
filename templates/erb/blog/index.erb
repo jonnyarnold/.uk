@@ -7,7 +7,7 @@
       <li class='post'>
         <span class='post-date'><%= post.publish_date.strftime('%d %b %Y') %></span>
         <span class='divider'>&nbsp;</span>
-        <a class='post-title' href='<%= post.url %>'><%= post.title %></a>
+        <a class='post-title' href='<%= post.url %>' <%= post.is_redirect? ? "target='_blank'" : nil %>><%= post.title %></a>
       </li>
     <% end %>
   </ul>
