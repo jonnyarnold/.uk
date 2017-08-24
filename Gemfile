@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem 'sinatra'
-gem 'foreman'
-gem 'redcarpet'
+gem 'sinatra' # Web server
+gem 'redcarpet' # Markdown parsing
+gem 'sass' # Stylesheets on steroids
 
 group :development do
   gem 'pry-byebug'

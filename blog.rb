@@ -54,7 +54,14 @@ module Blog
     end
 
     attr_accessor :url, :url_title
-    METADATA_KEYS = [:title, :tags, :event_date, :publish_date, :last_updated]
+    METADATA_KEYS = [
+      :title,
+      :redirect_url, 
+      :tags, 
+      :event_date, 
+      :publish_date, 
+      :last_updated
+    ]
 
     # Accessors
     METADATA_KEYS.each do |key|
@@ -69,6 +76,10 @@ module Blog
 
     def hidden?
       publish_date.nil?
+    end
+
+    def is_redirect?
+      !redirect_url.nil?
     end
 
     private
@@ -91,6 +102,15 @@ module Blog
       content[0][/^\# (.*)$/, 1]
     end
 
+    def parse_redirect_url(content)
+      # Of the form: > URL
+      if redirect_url = content[1][/^\> (.*)$/, 1]
+        @url = redirect_url
+      end
+
+      redirect_url
+    end
+
     def parse_tags(content)
       # Of the form: <!--- tags:tag1,tag2 -->
       all_tags = content[1][/^\<\!\-\-\- (.*) \-\-\>/, 1]
@@ -101,14 +121,14 @@ module Blog
 
     def parse_event_date(content)
       # Of the form: *2008-2009* or *2008*
-      event_date_str = content[2][/^\*([0-9]*)/, 1]
+      event_date_str = content[2][/^\*([0-9\-]*)/, 1]
 
       return nil if event_date_str.nil? || event_date_str == ''
-      Date.new(event_date_str.to_i)
+      event_date_str
     end
 
     def parse_publish_date(content)
-      # Of the form: *Posted by Jonny Arnold on 25th April 1989*
+      # Of the form: *Posted by [Jonny Arnold](/) on 25th April 1989*
       publish_date_str = content[2][/^\*Posted by (.*) on (.*)\*/, 2]
 
       return nil if publish_date_str.nil?
@@ -117,8 +137,9 @@ module Blog
 
     def parse_last_updated(content)
       # Of the form: *Updated on 25th April 1989*
-      updated_date_str = content[3][/^\*Updated on (.*)\*/, 1]
+      return publish_date if content[3].nil?
 
+      updated_date_str = content[3][/^\*Updated on (.*)\*/, 1]
       return publish_date if updated_date_str.nil?
       Date.parse(updated_date_str)
     end

@@ -1,6 +1,6 @@
 # How To Get Hired
 <!--- interviews,software -->
-*Posted by Jonny Arnold on 25th July 2016*
+*Posted by [Jonny Arnold](/) on 25th July 2016*
 
 I'm concerned that the perceptions and realities of hiring software developers are vastly different. When starting out in software, it can often seem very daunting. In this unashamedly inspiring talk, I try to tell people that they should stay confident and keep trying.
 

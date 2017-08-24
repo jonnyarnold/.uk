@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic|Montserrat:400,700);
+
+@mixin on-small-screen {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 125%;
+  line-height: 1.25;
+
+  background-color: #FFF;
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+  @include on-small-screen {
+    font-size: 100%;
+  }
+}
+
+@mixin h1-underline($color) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  display: inline-block;
+  font-size: 150%;
+  border-bottom: 7px solid #{$color};
+  margin-bottom: 0.25em;
+}
+
+a {
+  display: inline-block;
+  border-bottom: 4px solid #00F;
+  margin: 0 -4px -4px -4px;
+  padding: 0 4px;
+  
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all linear 0.1s;
+
+  &.no-underline {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+a:hover {
+  background-color: #00F;
+  color: #FFF;
+}
+
+b {
+  font-weight: 600;
+}
+
+@mixin bordered {
+  border: 0.5em solid white;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, .5);
+  margin: 0.5em;
+  background-color: white;
+}
+
+@mixin circle {
+  border-radius: 1000px; /* This auto-crops to give a circle! */
+}
+
+@mixin pick-up-on-hover {
+  box-shadow: none;
+  margin-top: 0.25em;
+  margin-bottom: -0.25em;
+
+  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.25s linear;
+
+  &:hover {
+    margin-top: -0.25em;
+    margin-bottom: 0.25em;
+
+    box-shadow: 0 0.25em 0.75em 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@mixin tag-list {
+  font-size: 80%;
+  font-weight: 600;
+  text-align: center;
+  
+  & > li {
+    display: inline-block;
+    white-space: pre;
+
+    &:first-child:before,
+    &:after { 
+      content: '·';
+      color: #CCC;
+      padding: 0 0.5em;
+    }
+  }
+}
+
+@mixin page {
+  display: block;
+  max-width: 1024px;
+  margin: auto;
+  padding: 2em 2em 8em 2em;
+
+  @include on-small-screen {
+    padding: 0 1em 4em 1em;
+  }    
+
+}

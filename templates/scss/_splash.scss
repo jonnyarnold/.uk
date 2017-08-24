@@ -1,0 +1,83 @@
+.splash-outer {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.splash-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.splash-content {
+  display: inline-block;
+  max-width: 640px;
+  padding: 1em;
+}
+
+.logo {
+  display: block;
+}
+
+.profile-image {
+  @include bordered;
+  @include circle;
+
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+
+  @include on-small-screen {
+    text-align: center;
+  }
+}
+
+.title-name {
+  @include h1-underline(#FF9F00);
+}
+
+.title-tagline {}
+
+
+ul.links {
+  margin: 1em 0 2em 0;
+  font-size: 125%;
+}
+
+ul.links li {
+  margin: 0.5em 0;
+}
+
+ul.links li a {
+  padding-bottom: 4px;
+}
+
+
+.social-list li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-list li a {
+  border-bottom: none;
+
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+.social {
+  @include circle;
+  @include pick-up-on-hover;
+
+  display: inline-block;
+  background-color: white;
+  margin: 0 0.5em;
+}

@@ -1,6 +1,6 @@
 # Doing Things Differently
 <!--- software,productivity -->
-*Posted by Jonny Arnold on 11th April 2016*
+*Posted by [Jonny Arnold](/) on 11th April 2016*
 
 When I worked for Reevoo we took our productivity seriously. In this public retrospective I present a number of experiments that we did in the engineering team at Reevoo - what went well, what went badly, and what we would change.
 

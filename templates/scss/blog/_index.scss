@@ -1,0 +1,46 @@
+@import 'article';
+
+.blog.index,
+.projects.index {
+  @include page;
+  
+  h1 {
+    @include h1-underline(#F00);
+  }
+
+  .post-index {
+    margin-top: 2em;
+  }
+
+  .post {
+    padding: 0.25em 0;
+  }
+  
+  .post-date {
+    display: inline-block;
+    font-size: 80%;
+    width: 5.5em;
+
+    @include on-small-screen {
+      display: block;
+    }
+  }
+
+  .divider {
+    color: #CCC;
+    padding: 0 1em 0 0;
+    
+    &:after {
+      content: '·';
+    }
+
+    @include on-small-screen {
+      &:after { content: none; }
+      display: none;
+    }
+  }
+
+  .post-title {
+    border-bottom: none;
+  }
+}
