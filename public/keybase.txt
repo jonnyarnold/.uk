@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jonnyarnold
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.jonnyarnold.uk
+  * I am jonnyarnold (https://keybase.io/jonnyarnold) on keybase.
+  * I have a public key ASDgXrn_-SsrWMm38PlJkl64qLLlmYfuDY55pyAT5A7KxQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e05eb9fff92b2b58c9b7f0f949925eb8a8b2e59987ee0d8e79a72013e40ecac50a",
+      "host": "keybase.io",
+      "kid": "0120e05eb9fff92b2b58c9b7f0f949925eb8a8b2e59987ee0d8e79a72013e40ecac50a",
+      "uid": "5a58355fa1047537ab456d383b5c5419",
+      "username": "jonnyarnold"
+    },
+    "merkle_root": {
+      "ctime": 1506079694,
+      "hash": "5812cd714e3f9773d84073a268f68e958b41d6f7d4566328a1da31f7e70b710b03f35b25843b64c5b8e8dccbacd49ed05d7371fd5e5443c73aa203f64552b2e2",
+      "hash_meta": "635516fdc8b83c170703ddc68d7c6d815ef5aa82a9c02c5693125952c002a579",
+      "seqno": 1443009
+    },
+    "service": {
+      "hostname": "www.jonnyarnold.uk",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.30"
+  },
+  "ctime": 1506079712,
+  "expire_in": 504576000,
+  "prev": "9a42d6e48724d9e77571c5b49bdf153de83ef7075b329cab57062ef919326970",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4F65//krK1jJt/D5SZJeuKiy5ZmH7g2OeacgE+QOysUKp3BheWxvYWTFA0x7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTA1ZWI5ZmZmOTJiMmI1OGM5YjdmMGY5NDk5MjVlYjhhOGIyZTU5OTg3ZWUwZDhlNzlhNzIwMTNlNDBlY2FjNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTA1ZWI5ZmZmOTJiMmI1OGM5YjdmMGY5NDk5MjVlYjhhOGIyZTU5OTg3ZWUwZDhlNzlhNzIwMTNlNDBlY2FjNTBhIiwidWlkIjoiNWE1ODM1NWZhMTA0NzUzN2FiNDU2ZDM4M2I1YzU0MTkiLCJ1c2VybmFtZSI6Impvbm55YXJub2xkIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA2MDc5Njk0LCJoYXNoIjoiNTgxMmNkNzE0ZTNmOTc3M2Q4NDA3M2EyNjhmNjhlOTU4YjQxZDZmN2Q0NTY2MzI4YTFkYTMxZjdlNzBiNzEwYjAzZjM1YjI1ODQzYjY0YzViOGU4ZGNjYmFjZDQ5ZWQwNWQ3MzcxZmQ1ZTU0NDNjNzNhYTIwM2Y2NDU1MmIyZTIiLCJoYXNoX21ldGEiOiI2MzU1MTZmZGM4YjgzYzE3MDcwM2RkYzY4ZDdjNmQ4MTVlZjVhYTgyYTljMDJjNTY5MzEyNTk1MmMwMDJhNTc5Iiwic2Vxbm8iOjE0NDMwMDl9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3Lmpvbm55YXJub2xkLnVrIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMCJ9LCJjdGltZSI6MTUwNjA3OTcxMiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiI5YTQyZDZlNDg3MjRkOWU3NzU3MWM1YjQ5YmRmMTUzZGU4M2VmNzA3NWIzMjljYWI1NzA2MmVmOTE5MzI2OTcwIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAST6kStmS4lXtZb3Tp3DtvwRIrZoGZEy1rikzu1+3PnqYe/xSb3wplcEJDHvxiT4xSJQIFumjSxj7Aj1zYHeBCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBXAV5y4eAUHH4ObIE5npRxsfgjDfd+7amqc6YGOXfkIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jonnyarnold
+
+==================================================================
