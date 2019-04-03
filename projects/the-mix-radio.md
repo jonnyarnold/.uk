@@ -1,6 +1,6 @@
 # The Mix Radio
 <!--- radio -->
-*2015 - Present*
+*2015-2016*
 
 Two of my friends and I have a show on [The Mix Radio](http://themixradio.co.uk/), broadcasting chart music and having fun every Sunday evening from 5-7pm.
 
