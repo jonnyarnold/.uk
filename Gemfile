@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-gem 'sinatra' # Web server
-gem 'redcarpet' # Markdown parsing
-gem 'sass' # Stylesheets on steroids
-
-group :development do
-  gem 'pry-byebug'
-end
+gem 'tilt'
+gem 'fileutils'
+gem 'redcarpet'
+gem 'sassc'
+gem 'tilt-sassc'

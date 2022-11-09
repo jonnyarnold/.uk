@@ -1,8 +1,0 @@
-services:
-  # Create the web server hosting sinatra
-  - type: web
-    name: web
-    env: ruby
-    region: frankfurt
-    buildCommand: bundle install
-    startCommand: bundle exec ruby server.rb
