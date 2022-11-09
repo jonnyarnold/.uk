@@ -29,7 +29,7 @@ def render_file(input_path, output_path, opts={})
 end
 render_file('templates/scss/index.scss', 'build/css/index.css')
 render_file('templates/erb/index.erb', 'build/index.html', layout_path: 'templates/erb/layout.erb')
-render_file('templates/erb/cv.erb', 'build/cv.html')
+render_file('templates/erb/cv.erb', 'build/cv.html', layout_path: 'templates/erb/layout.erb')
 
 
 # erb/cv.erb -> /cv
