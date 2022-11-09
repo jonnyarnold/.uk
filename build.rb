@@ -2,8 +2,12 @@
 require 'fileutils'
 require 'tilt'
 
-# scss/index.scss -> /css/index.css
-# erb/index.erb -> /
+def copy_dir(input_path, output_path)
+  FileUtils.copy_entry input_path, output_path
+end
+copy_dir('public', 'build')
+
+
 def render(input_path, opts={})
   layout_path = opts[:layout_path]
   if layout_path.nil?
@@ -14,7 +18,6 @@ def render(input_path, opts={})
     }
   end
 end
-
 def render_file(input_path, output_path, opts={})
   dir = File.dirname(output_path)
   unless File.directory?(dir)
@@ -24,7 +27,6 @@ def render_file(input_path, output_path, opts={})
     file.write(render(input_path, opts))
   end 
 end
-
 render_file('templates/scss/index.scss', 'build/css/index.css')
 render_file('templates/erb/index.erb', 'build/index.html', layout_path: 'templates/erb/layout.erb')
 render_file('templates/erb/cv.erb', 'build/cv.html')
