@@ -3,7 +3,7 @@
   <p>The many witterings of <a href='/'>Jonny Arnold</a>.</p>
 
   <ul class='post-index'>
-    <% @recent_posts.each do |post| %>
+    <% recent_posts.each do |post| %>
       <li class='post'>
         <span class='post-date'><%= post.publish_date.strftime('%d %b %Y') %></span>
         <span class='divider'>&nbsp;</span>

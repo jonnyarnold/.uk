@@ -2,6 +2,7 @@
 
 # BLOG.RB
 # Micro-blog service
+require 'date'
 
 module Blog
   # A Blog is a collection of Posts.
@@ -53,7 +54,7 @@ module Blog
       @url = url_path + '/' + @url_title
     end
 
-    attr_accessor :url, :url_title
+    attr_accessor :path, :url, :url_title
     METADATA_KEYS = [
       :title,
       :redirect_url, 
