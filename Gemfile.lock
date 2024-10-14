@@ -1,18 +1,39 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.15.5)
-    fileutils (1.6.0)
-    redcarpet (3.5.1)
+    ffi (1.17.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
+    fileutils (1.7.2)
+    redcarpet (3.6.0)
     sassc (2.4.0)
       ffi (~> 1.9)
-    tilt (2.0.11)
+    tilt (2.4.0)
     tilt-sassc (0.2.0)
       sassc (~> 2.0)
       tilt (~> 2.0)
+    webrick (1.8.2)
 
 PLATFORMS
-  x86_64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  ruby
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   fileutils
@@ -20,6 +41,7 @@ DEPENDENCIES
   sassc
   tilt
   tilt-sassc
+  webrick (~> 1.8)
 
 BUNDLED WITH
-   2.3.5
+   2.5.18
