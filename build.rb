@@ -3,6 +3,7 @@ require 'fileutils'
 require 'tilt'
 
 require './blog'
+require './timeline'
 
 def copy_dir(input_path, output_path)
   FileUtils.copy_entry input_path, output_path
@@ -33,8 +34,10 @@ def render_file(input_path, output_path, opts={})
   end 
 end
 
+timeline = Timeline::TIMELINE
+
 render_file('templates/scss/index.scss', 'build/css/index.css')
-render_file('templates/erb/index.erb', 'build/index.html', layout_path: 'templates/erb/layout.erb')
+render_file('templates/erb/index.erb', 'build/index.html', layout_path: 'templates/erb/layout.erb', locals: { timeline: timeline })
 render_file('templates/erb/cv.erb', 'build/cv.html', layout_path: 'templates/erb/layout.erb')
 # render_file('templates/erb/manifesto.erb', 'build/manifesto.html', layout_path: 'templates/erb/layout.erb')
 

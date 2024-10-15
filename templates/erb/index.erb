@@ -1,24 +1,15 @@
-<div class='splash-outer'>
-  <div class='splash-inner'>
-    <div class='splash-content'>
+<h1>Jonny Arnold.</h1>
 
-      <div class='logo'>
-        <img src='img/lakes.jpg' class='profile-image' />
-
-        <div class='title'>
-          <h1 class='title-name'>Jonny Arnold</h1>
-          <h3 class='title-tagline'>Insert clever tagline here.</h3>
-        </div>
-      </div>
-
-      <ul class='links'>
-        <li><a href='/blog'>Blog</a></li>
-        <li><a href='/projects'>Projects</a></li>
-        <li><a href='/cv'>CV</a></li>
-      </ul>
-
-      <%= render 'templates/erb/social.erb' %>
-      
-    </div>  
-  </div>
-</div> 
+<ul class="timeline">
+  <% timeline.each do |event| %>
+    <li class='<%= event.type %>'>
+      <span class='date'><%= event.date.to_s %></span>
+      <span class='divider'>&nbsp;</span>
+      <% if event.url %>
+        <a class='description' href='<%= event.url %>'><%= event.description %></a>
+      <% else %>
+        <span class='description'><%= event.description %></span>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
